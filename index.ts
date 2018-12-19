@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 
 // Creando el objeto server
-const server = new Server();
+const server = Server.instace;
 
 // BodyParser
 server.app.use(bodyParser.urlencoded({extended:true}));
